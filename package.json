@@ -3,13 +3,18 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "start": "twilio-run --env"
   },
   "devDependencies": {
+    "axios": "^0.19.2",
+    "jest": "^26.6.3",
     "twilio-run": "^2.0.0"
   },
   "engines": {
-    "node" : ">=8.0.0 <11.0.0" 
+    "node": ">=8.0.0 <11.0.0"
+  },
+  "jest": {
+    "testEnvironment": "node"
   }
 }
