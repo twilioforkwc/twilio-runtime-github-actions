@@ -37,6 +37,6 @@ jobs:
       - name: Start local http server in background
         run: npm start &
       - name: Test
-        run: npm Test
+        run: npm test
       - name: Deploy the function
         run: twilio serverless:deploy --service-name=example-deployed-with-github-actions --environment=dev --force
